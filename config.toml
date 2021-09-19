@@ -1,0 +1,5 @@
+baseURL = 'https://phinjensen.com/'
+languageCode = 'en-us'
+title = 'Phineas Jensen'
+[params]
+  author = 'Phineas Jensen'
