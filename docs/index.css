@@ -53,3 +53,51 @@ a:hover {
 footer {
   text-align: center;
 }
+
+@media screen and (max-width: 1024px) {
+  .sidebar {
+    flex: 0 0 100%;
+    padding-right: 0;
+    padding-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #avatar {
+    width: 128px;
+    padding-right: 32px;
+  }
+
+  .wrapper {
+    width: 640px;
+    flex-wrap: wrap;
+  }
+
+  .content {
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .sidebar {
+    flex: 0 0 100%;
+    padding-right: 0;
+    padding-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #avatar {
+    width: 128px;
+    padding-right: 32px;
+  }
+
+  .wrapper {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .content {
+    flex: 0 0 100%;
+  }
+}
