@@ -9,4 +9,4 @@ Right now I'm studying, working at the BYU Department of Anthropology, working o
 I don't use social media much these days, but I do have a presence on several platforms:
 - [Instagram](https://instagram.com/phinjensen)
 - [RateYourMusic](https://rateyourmusic.com/~uncleshelby)
-- [Last.fm](https://last.fm/heliosfire)
+- [Last.fm](https://last.fm/user/heliosfire)
