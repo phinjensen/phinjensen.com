@@ -8,6 +8,9 @@
     <loc>https://phinjensen.com/blog/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>https://phinjensen.com/wishlist/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>https://phinjensen.com/categories/</loc>
   </url><url>
     <loc>https://phinjensen.com/tags/</loc>
