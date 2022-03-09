@@ -1,3 +1,3 @@
-# A weblog??
+I occasionally write blog posts for my employer, End Point. Here is the latest:
 
-Nothing here yet. Which means you are one of the first to see this website! That's gotta be worth something. Upload it to the Internet Archive so when I'm famous, you'll be able to brag to your friends that you were one of the first to visit the website of the great and illustrious Phineas Jensen.
+[Migrating a Node.js app database from MongoDB to PostgreSQL](https://www.endpointdev.com/blog/2022/02/migrating-mongodb-to-postgresql/)
