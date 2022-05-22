@@ -1,0 +1,7 @@
+{{- range .RegularPagesRecursive -}}
+  <div class="blog-post panel">
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    {{ partial "blog-post-subheader.html" . }}
+    <div>{{ .Description }}</div>
+  </div>
+{{- end -}}

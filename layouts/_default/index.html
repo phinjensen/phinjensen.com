@@ -1,0 +1,8 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+<div id="body">{{ .Content }}</div>
+<h2>Recent posts</h2>
+{{ with .GetPage "/blog" }}
+{{ partial "blog-post-list.html" . }}
+{{ end }}
+{{ end }}

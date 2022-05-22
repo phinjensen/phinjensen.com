@@ -1,4 +1,6 @@
 @import url("Charter/charter.css");
+@import url("Plex Mono/plex-mono.css");
+@import url("Vollkorn/vollkorn.css");
 
 :root {
   --link-color: #036163;
@@ -6,7 +8,7 @@
 
 body {
   font-family: charter;
-  font-size: 14pt;
+  font-size: 13pt;
   line-height: 1.4;
 }
 
@@ -22,20 +24,57 @@ a:hover {
   text-decoration: none;
 }
 
+sup {
+  line-height: 1;
+}
+
+a.footnote-ref,
+a.footnote-backref {
+  text-decoration: none;
+  line-height: 1;
+  margin-left: 2px;
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Vollkorn;
+  font-weight: bold;
+}
+
+blockquote {
+  font-size: 12pt;
+  line-height: 1.3;
+  padding: 0 0.5em 0.5em;
+  background: #dee0e3;
+  border-radius: 4px;
+}
+
+blockquote :last-child {
+  margin-bottom: 0;
+}
+
+blockquote :first-child {
+  margin-top: 0;
+}
+
 .wrapper {
   margin: 0 auto;
   display: flex;
-  width: 1024px;
+  justify-content: center;
+  gap: 32px;
 }
 
 .sidebar {
-  flex: 0 1 256px;
-  padding-right: 32px;
-  padding-top: 32px;
+  flex: 0 0 192px;
 }
 
 #avatar {
-  width: 224px;
+  width: 100%;
 }
 
 .sidebar ul {
@@ -47,11 +86,48 @@ a:hover {
 }
 
 .content {
-  flex: 0 1 auto;
+  flex: 0 0 36em;
+  overflow: hidden;
+}
+
+.content #body {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+code {
+  font-family: "Plex Mono";
+  font-size: 11pt;
+  background-color: white;
+  border-radius: 4px;
+  padding: 0 2px;
+  line-height: 1;
+}
+
+.highlight pre {
+  overflow: auto;
+}
+
+.highlight code {
+  display: inline-block;
+  padding: 8px;
+  background-color: inherit;
+  border-radius: 0;
+  line-height: 1.4;
 }
 
 footer {
   text-align: center;
+  margin-top: 2em;
+}
+
+.blog-post.panel {
+  padding: 1em;
+  border: 1px solid var(--link-color);
+  margin-bottom: 2em;
+  border-radius: 1em;
 }
 
 @media screen and (max-width: 1024px) {
