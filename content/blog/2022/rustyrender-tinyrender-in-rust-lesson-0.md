@@ -1,5 +1,5 @@
 ---
-title: "RustyRender: a tinyrenderer implementation in Rust (lesson 0)"
+title: "RustyRender: a tinyrenderer implementation in Rust (lesson 0)"
 author: Phineas Jensen
 date: 2022-05-21
 description: "Finding tinyrenderer—Choosing Rust—Porting the TGA library—Structs as raw bytes"
