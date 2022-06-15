@@ -1,8 +1,8 @@
 ---
-title: "RustyRender: Bresenham's line-drawing algorithm (lesson 1)"
+title: "RustyRender: Bresenham’s line-drawing algorithm (lesson 1)"
 author: Phineas Jensen
 date: 2022-06-12
-description: "Finding tinyrenderer—Choosing Rust—Porting the TGA library—Structs as raw bytes"
+description: "Naive line drawing attempts—Dealing with steep lines—Premature optimization—Bresenham’s algorithm with integers—Rendering a wireframe"
 tags:
   - rust
   - graphics
@@ -128,15 +128,15 @@ fn line<T: ColorSpace + Copy>(
 
 This is a functional line-drawing algorithm. It correctly draws lines at any angle (including completely vertical or horizontal) and works regardless of the order the points are specified. Actually, to get it to draw a horizontal line correctly I had to modify Dmitry's algorithm to round the Y coordinate, without which the line wavers between two pixels.
 
-## Optimzation (and premature optimization)
+## Optimization (and premature optimization)
 
-This algorithm works for pretty much any case within the image boundaries. My implementation of `image.set()` will return an `Err` if a pixel is out of boundaries, so there would be an error there. Dmitry mentions this and recommneds adding error checking but doesn't include it in the lesson to keep the code clean. I'm doing that for the same reason, and in a future post I will likely rework the types and error checking somewhat to make things a little simpler. For example, having so many `as usize` or `as f64` statements is both noisy and may be prone to errors, and that will become even more obvious in the following post as we start drawing triangles.
+This algorithm works for pretty much any case within the image boundaries. My implementation of `image.set()` will return an `Err` if a pixel is out of boundaries, so there would be an error there. Dmitry mentions this and recommends adding error checking but doesn't include it in the lesson to keep the code clean. I'm doing that for the same reason, and in a future post I will likely rework the types and error checking somewhat to make things a little simpler. For example, having so many `as usize` or `as f64` statements is both noisy and may be prone to errors, and that will become even more obvious in the following post as we start drawing triangles.
 
-Another issue with this algorithm, though, is its inefficiency. It uses two float multiplications and a float division in every loop, which are a lot slower than integer operations, and is especially noticeable when drawing a large number of lines. Both the multiplication/division and the use of floating-point numbers can be avoided by using a specific version of Bresenham's algorithm. The tinyrenderer lesson is a little bit sparse in its explanation of the algorithm, but the [Wikipedia page](https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm) has great explanations, visuals, and pseudocode.
+Another issue with this algorithm, though, is its inefficiency. It uses two float multiplications and a float division in every loop iteration, which are a lot slower than integer operations, and is especially noticeable when drawing a large number of lines. Both the multiplication/division and the use of floating-point numbers can be avoided by using a specific version of Bresenham's algorithm. The tinyrenderer lesson is a little bit sparse in its explanation of the algorithm, but the [Wikipedia page](https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm) has great explanations, visuals, and pseudocode.
 
 ### Blind optimization
 
-Dmitry's tutorial demonstrates the need and benefit of optimizing our line-drawing algorithm by drawing three lines 1,000,000 times each and looking at the performance profile for each function that is called using the [gprof](https://en.wikipedia.org/wiki/Gprof) tool. This is done by using several debugging options when compiling the C++ code. When the program is run, it is samples the code at a high frequency and records what function is being called at each point. This can give a good idea of where the code is spending most of its time and help to know where improvements are best made. Here's the output given in the tutorial:
+Dmitry's tutorial demonstrates the need and benefit of optimizing our line-drawing algorithm by drawing three lines 1,000,000 times each and looking at the performance profile for each function that is called using the [gprof](https://en.wikipedia.org/wiki/Gprof) tool. This is done by using several debugging options when compiling the C++ code. When the program is run, it samples the code at a high frequency and records what function is being called at each point. This can give a good idea of where the code is spending most of its time and help to know where improvements are best made. Here's the output given in the tutorial:
 
 ```console
 %   cumulative   self              self     total
@@ -168,7 +168,7 @@ user    0m9.943s
 sys     0m0.010s
 ```
 
-And if you're a little more careful than I am, you might be wondering now *what on earth is he talking about, comparing his program's total execution time to the `line` function's execution time in the original implementation?* Unfortunately, I misinterpreted the 2.95 and 0.64 seconds to mean *total* program execution time and then went on to try to optimize my program further *without checking the tinyrender execution time on my own computer*. Gah! Not my smartest moment.
+And if you're a little more careful than I am, you might be wondering now *what on earth is he talking about, comparing his program's total execution time to the `line` function's execution time in the original implementation?* Unfortunately, I misinterpreted the 2.95 and 0.64 seconds to mean *total* program execution time and then went on to try to optimize my program further *without checking the tinyrenderer execution time on my own computer*. Gah! Not my smartest moment.
 
 On the bright side, my stupidity let me learn a little bit about how to [profile rust](https://nnethercote.github.io/perf-book/profiling.html) using `perf` and showed me how some of Rust's abstractions aren't quite as cheap or free as I had assumed. For example, `perf` was telling me that nearly 10% of my execution time was taken up in the `<core::ops::range::RangeInclusive<T> as core::iter::range::RangeInclusiveIteratorImpl>::spec_next` function. A little bit of digging and I figured out that came from the `for x in x0..=x1 {}` loop, which uses an iterator. Switching to a `while x <= x1 {}` loop and manually incrementing my `x` value completely removed all of those calls and dropped my execution time by an unexpected ~40%:
 
@@ -280,7 +280,7 @@ The `derror` value is essentially the slope of the line, so every iteration of o
 
 With that, we can draw our wireframe!
 
-Except we don't have a library to read the `.obj` files... That's not too difficult, though. These [`.obj` files](https://en.wikipedia.org/wiki/Wavefront_.obj_file) are text files that define vertices by their 3 dimenions and triangles by a list of the three vertices that make them up (referenced by index as defined in the file). That means we can read these files by making some simple geometry structs and doing some basic text processing.
+Except we don't have a library to read the `.obj` files... That's not too difficult, though. These [`.obj` files](https://en.wikipedia.org/wiki/Wavefront_.obj_file) are text files that define vertices by their 3 dimensions and triangles by a list of the three vertices that make them up (referenced by index as defined in the file). That means we can read these files by making some simple geometry structs and doing some basic text processing.
 
 First, our 3-dimensional vector type:
 
@@ -353,7 +353,7 @@ fn get_face_indicies(line: String) -> Result<Vec<usize>, String> {
 }
 ```
 
-With these functions, building the final model is pretty straightforward. Rather than show all [that code], feel free to just take a look at it. The most important part was just that `Vec3` type, and the functions we'll use to actually read a file and generate the wireframe are pretty self-explanatory. Here's a final product rendering the `african_head.obj` file:
+With these functions, building the final model is pretty straightforward. Rather than show all [that code](https://github.com/phinjensen/rustyrender/blob/lesson-1/src/model.rs), feel free to just take a look at it. The most important part was just that `Vec3` type, and the functions we'll use to actually read a file and generate the wireframe are pretty self-explanatory. Here's a final product rendering the `african_head.obj` file:
 
 ```rust
 fn main() {
