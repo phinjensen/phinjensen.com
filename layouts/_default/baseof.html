@@ -38,6 +38,6 @@
       <div class="content">{{- block "main" . }}{{ end }}</div>
       <div class="sidebar"></div>
     </div>
-    <footer>copyright Phineas Jensen 2021</footer>
+    <footer>{{ replace .Site.Copyright "{year}" now.Year }}</footer>
   </body>
 </html>

@@ -1,6 +1,7 @@
 baseURL = 'https://phinjensen.com/'
 languageCode = 'en-us'
 title = 'Phineas Jensen'
+copyright = '© 2021-{year} Phineas Jensen — Made with 😱 in Provo, UT'
 [params]
   author = 'Phineas Jensen'
 
