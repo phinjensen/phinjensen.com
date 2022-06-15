@@ -394,7 +394,8 @@ fn main() {
 
 This post only covers the initial setup for the other 9 lessons in tinyrenderer, so be sure to check out the rest:
 
-- Lesson 1: to be posted
+- [Lesson 1: Bresenham's line-drawing algorithm](/blog/2022/rustyrender-bresenhams-line-drawing-algorithm)
+- Lesson 2: To be posted
 
 This list will be updated as posts are added.
 

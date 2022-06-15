@@ -115,6 +115,10 @@ blockquote :first-child {
   hyphens: auto;
 }
 
+.content #body img {
+  max-width: 100%;
+}
+
 code {
   font-family: "Plex Mono";
   font-size: 11pt;
