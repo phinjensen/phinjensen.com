@@ -9,4 +9,4 @@
   - [PSoC® 6 BLE Pioneer Kit](https://www.mouser.com/ProductDetail/Cypress-Semiconductor/CY8CKIT-062-BLE?qs=gt1LBUVyoHk%252BnUEs%2FploKw%3D%3D)
 - [Nothing Ear 1](https://us.nothing.tech/products/ear-1)
 - [Smithsonian Folkways Membership](https://folkways.si.edu/membership), or at least several months of it
-- [Polar Pacer smart watch](https://www.polar.com/pacer), to be used for tracking runs, as a stopwatch, tracking heart rate, etc.
+- [Polar Pacer smart watch](https://www.polar.com/us-en/pacer), to be used for tracking runs, as a stopwatch, tracking heart rate, etc.
