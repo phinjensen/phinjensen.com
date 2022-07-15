@@ -3,6 +3,7 @@ title: "RustyRender: Triangles and shading (lesson 2)"
 author: Phineas Jensen
 date: 2022-06-26
 description: ""
+draft: true
 tags:
   - rust
   - graphics
