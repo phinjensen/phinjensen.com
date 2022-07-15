@@ -11,5 +11,7 @@
   - [Arduino Sensor Kit](https://store-usa.arduino.cc/collections/kits/products/arduino-sensor-kit-bundle)
   - [PSoC® 6 BLE Pioneer Kit](https://www.mouser.com/ProductDetail/Cypress-Semiconductor/CY8CKIT-062-BLE?qs=gt1LBUVyoHk%252BnUEs%2FploKw%3D%3D)
 - a dough whisk
+- Everything Everywhere All at Once 4K bluray
 - [Nothing Ear 1](https://us.nothing.tech/products/ear-1)
 - [Polar Pacer smart watch](https://www.polar.com/us-en/pacer), to be used for tracking runs, as a stopwatch, tracking heart rate, etc.
+- other stuff like ovies, music, all-expenses paid trips to the MoA, donations to charitable causes, Brodie J. mixtapes, beautiful wall art, Persian rugs, etc.
