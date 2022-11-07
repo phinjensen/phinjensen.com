@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Primbess Chombo's Raspberry Game Jam</title>
+    <link rel="stylesheet" href="/game-jam.css" />
+    <script
+      async
+      defer
+      data-website-id="9a03429d-644c-4429-990b-96d749f3d1be"
+      src="https://umami.phinjensen.com/zzz.js"
+    ></script>
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="content">
+      {{- block "main" . }}{{ end }}
+      <footer>{{ replace .Site.Copyright "{year}" now.Year }}</footer>
+    </div>
+  </body>
+</html>
