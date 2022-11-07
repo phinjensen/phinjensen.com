@@ -5,6 +5,7 @@ copyright = '© 2021-{year} Phineas Jensen — Made with 😱 in Provo, UT'
 [params]
   author = 'Phineas Jensen'
 
-#[markup]
-#  [markup.highlight]
-#    style = 'fruity'
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
