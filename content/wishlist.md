@@ -9,5 +9,8 @@
   - Code: The Hidden Language of Computer Hardware and Software by Charles Petzold (2nd edition)
   - Open Circuits: The Inner Beauty of Electronic Components by Windell Oskay and Eric Schlaepfer
   - Game Programming Patterns or Crafting Interpreters by Robert Nystrom (maybe)
+  - By Randall Munroe:
+    - How To: Absurd Scientific Advice for Common Real-World Problems
+    - What If?: Serious Scientific Answers to Absurd Hypothetical Questions
 - Everything Everywhere All at Once 4K bluray
 - other stuff like movies, music, all-expenses paid trips to the MoA, donations to charitable causes, Brodie J. mixtapes, beautiful wall art, Persian rugs, etc.
