@@ -1,5 +1,4 @@
-@import url("Plex Mono/plex-mono.css");
-@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Nabla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nabla&family=IBM+Plex+Sans&display=swap");
 
 /* Reset */
 html {
@@ -62,7 +61,7 @@ body {
     rgba(255, 255, 255, 0.4),
     rgba(255, 255, 255, 0.1)
   );
-  font-family: "Vollkorn";
+  font-family: "IBM Plex Sans", sans-serif;
   padding: 16px;
   line-height: 1.6;
 }
