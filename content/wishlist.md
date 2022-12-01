@@ -3,9 +3,7 @@
 - Music:
   - Ants From Up There by Black Country, New Road (vinyl)
   - [The Ruby Cord](https://www.dominomusic.com/releases/richard-dawson/the-ruby-cord/exclusive-limited-lp) by Richard Dawson (vinyl)
-- Hardware programming kit (roughly in order of how much I want each one, but they would all be cool)
-  - [STM32F750N8 MCU Discovery Kit](https://www.st.com/en/evaluation-tools/stm32f7508-dk.html)
-  - [PSoC® 6 BLE Pioneer Kit](https://www.mouser.com/ProductDetail/Cypress-Semiconductor/CY8CKIT-062-BLE?qs=gt1LBUVyoHk%252BnUEs%2FploKw%3D%3D)
+- [STM32F750N8 MCU Discovery Kit](https://www.st.com/en/evaluation-tools/stm32f7508-dk.html)
 - Drum sticks (I'd love a few pairs to try out different woods/tips):
   - Promark 5A oak wood tip
   - Promark 5A maple wood tip
