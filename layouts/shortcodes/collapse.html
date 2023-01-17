@@ -1,0 +1,9 @@
+<div class="expand">
+  <input type="checkbox" id="expand-{{ .Ordinal }}" style="display: none;">
+  <label class="header" for="expand-{{ .Ordinal }}">
+    <div class="status expand-plus">➕</div>
+    <div class="status expand-minus">➖</div>
+    Show/Hide {{ .Get 0 }}
+  </label>
+  <div class="collapsed">{{ .Inner }}</div>
+</div>

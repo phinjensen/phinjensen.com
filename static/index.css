@@ -4,10 +4,11 @@
 
 :root {
   --link-color: #036163;
+  --background-color: #eff0f1;
 }
 
 body {
-  background-color: #eff0f1;
+  background-color: var(--background-color);
   font-family: charter;
   font-size: 13pt;
   line-height: 1.4;
@@ -104,7 +105,7 @@ blockquote :first-child {
 }
 
 .content {
-  flex: 0 0 36em;
+  flex: 0 0 40em;
   overflow: hidden;
 }
 
@@ -160,6 +161,57 @@ footer {
   font-family: Vollkorn;
 }
 
+.expand {
+  border-radius: 4px;
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.expand .header {
+  font-family: Vollkorn;
+  line-height: 1;
+  width: 100%;
+}
+
+.expand .status {
+  flex: 0 0 auto;
+  padding: 1em;
+}
+
+.expand .expand-plus {
+  display: inline-block;
+}
+
+.expand .expand-minus {
+  display: none;
+}
+
+.expand :checked ~ .header .expand-minus {
+  display: inline-block;
+}
+
+.expand :checked ~ .header .expand-plus {
+  display: none;
+}
+
+.expand label {
+  cursor: pointer;
+  flex: 0 1 auto;
+}
+
+.expand .collapsed {
+  padding: 1em;
+  display: none;
+}
+
+.expand :checked ~ .collapsed {
+  border-top: 1px solid var(--background-color);
+  display: block;
+  width: 100%;
+}
+
 @media screen and (max-width: 1024px) {
   .sidebar {
     flex: 0 0 100%;
@@ -175,7 +227,7 @@ footer {
   }
 
   .wrapper {
-    width: 640px;
+    width: 800px;
     flex-wrap: wrap;
     gap: 0;
   }
