@@ -2,25 +2,14 @@
 
 - Music:
   - Ants From Up There by Black Country, New Road (vinyl)
-  - [The Ruby Cord](https://www.dominomusic.com/releases/richard-dawson/the-ruby-cord/exclusive-limited-lp) by Richard Dawson (vinyl)
-- [STM32F750N8 MCU Discovery Kit](https://www.st.com/en/evaluation-tools/stm32f7508-dk.html)
-- Drum sticks (I'd love a few pairs to try out different woods/tips):
-  - Promark 5A oak wood tip
-  - Promark 5A maple wood tip
-  - Promark 5A hickory wood tip
-  - Promark 5A maple nylon tip
 - Books:
-  - Code: The Hidden Language of Computer Hardware and Software by Charles Petzold (2nd edition)
-  - Open Circuits: The Inner Beauty of Electronic Components by Windell Oskay and Eric Schlaepfer
-  - By Randall Munroe:
-    - How To: Absurd Scientific Advice for Common Real-World Problems
-    - What If?: Serious Scientific Answers to Absurd Hypothetical Questions
-- Sewing patterns/fabric
-  - The clothes at [Learn MYOG](https://learnmyog.com/) are very cool (I already own the DIAS shorts pattern)
-  - Any cute baby clothes I could learn to make
-  - Any fabric to go with any patterns
-- A good baking stone (preferably a larger, rectangular one--ask me how big my oven is if you want lol)
-- Everything Everywhere All at Once 4K bluray
-- Primer on bluray or DVD
-- Planetary Traveler on DVD
-- other stuff like movies, music, all-expenses paid trips to the MoA, donations to charitable causes, Brodie J. mixtapes, beautiful wall art, Persian rugs, etc.
+  - [Rust for Rustaceans](https://nostarch.com/rust-rustaceans)
+- Movies:
+  - [The Trial](https://www.criterion.com/films/28115-the-trial) 4K or normal bluray
+  - Primer on bluray or DVD
+- 2023 Toyota Corolla Hybrid XLE
+- Cooking stuff
+  - Bench scraper
+  - Knife sharpener
+- BIG mousepad, the kind that goes under your keyboard and mouse (Zed & Seth know what I'm talking about)
+- Other stuff, I don't know what I want.
