@@ -1,6 +1,6 @@
-@import url("Charter/charter.css");
 @import url("Plex Mono/plex-mono.css");
 @import url("Vollkorn/vollkorn.css");
+@import url("Source Serif/source-serif.css");
 
 :root {
   --link-color: #036163;
@@ -8,13 +8,12 @@
 
 body {
   background-color: #eff0f1;
-  font-family: charter;
+  font-family: "Source Serif", serif;
   font-size: 13pt;
   line-height: 1.4;
 }
 
 a {
-  display: inline-block;
   color: var(--link-color);
   text-decoration-style: wavy;
   text-decoration-thickness: 1px;

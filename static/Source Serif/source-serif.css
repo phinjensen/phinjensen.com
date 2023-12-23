@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Source Serif";
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  src: url("SourceSerif4-Regular.otf.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Serif";
+  font-style: italic;
+  font-weight: normal;
+  font-stretch: normal;
+  src: url("SourceSerif4-It.otf.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Serif";
+  font-style: normal;
+  font-weight: bold;
+  font-stretch: normal;
+  src: url("SourceSerif4-Bold.otf.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Serif";
+  font-style: italic;
+  font-weight: bold;
+  font-stretch: normal;
+  src: url("SourceSerif4-BoldIt.otf.woff2") format("woff2");
+}
