@@ -43,6 +43,7 @@ To make it a little easier to see where each issue is, I've marked the map accor
 - Wales is a country in the UK, not a city (though it's in roughly the right place)
 - The island marked "York (U.K.)" is actually called Guernsey
 - Belfast, UK is listed as "Belslow"
+- Ireland is called South Ireland instead of just Ireland (a reference to the country in the UK called "North Ireland")
 - Dublin, Ireland is listed as "Belfast"
 - [Duplo](https://en.wikipedia.org/wiki/Lego_Duplo), Ireland doesn't exist (and Dublin should be marked as the capital)
 - There's no "[Goscinny](https://en.wikipedia.org/wiki/Ren%C3%A9_Goscinny)" in northwestern France
