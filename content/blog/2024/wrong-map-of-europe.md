@@ -11,7 +11,7 @@ I recently came across this map of Europe in a Discord memes channel:
 
 ![map of Europe with many strange problems](/blog/2024/wrong-map-of-europe/original.jpg)
 
-At first glance it didn't seem to be anything special, but why was it posted in a *memes* channel? I took a closer look. Even if you're not super familiar with European geography, you'll probably find something... *off* about it. Or many things.
+At first glance, it didn't seem to be anything special, but why was it posted in a *memes* channel? I took a closer look. Even if you're not super familiar with European geography, you'll probably find something... *off* about it. Or many things.
 
 After finding a lot of discrepancies from my own memory of European maps, I decided to try to catalog every single problem with the map and found way more issues than I expected. I think it's very likely I missed some things as well, so please [email me](mailto:phin@zayda.net) if you find more issues. I'll update the list and give you credit (or keep it anonymous if you'd prefer).
 
@@ -29,7 +29,7 @@ To make it a little easier to see where each issue is, I've marked the map accor
 - Iceland is rotated 180 degrees
 - "Faroe Islands (ICELAND)" don't exist
 - The arctic circle doesn't pass through Iceland (though this may be a consequence of the rotation)
-- Reykjavik is in the wrong place on the island anyway
+- Reykjavík is in the wrong place on the island anyway
 - The capital of the Faroe Islands is Tórshavn - it's correct on the fake islands, but wrong on the real ones
 - Havntors isn't a real place
 - The "Sheltie islands" are actually called Shetland or the Shetland islands
@@ -39,7 +39,7 @@ To make it a little easier to see where each issue is, I've marked the map accor
 - Leeds is misspelled as Leads (although it would be in the right place)
 - There is no city named Gerrard
 - Neville is a city in France, but not the UK
-- Bringmeham, UK doesn't exist (although it's placed close to Birmingham)
+- Bringmeham, UK doesn't exist (probably an intentional misspelling of Birmingham)
 - Wales is a country in the UK, not a city (though it's in roughly the right place)
 - The island marked "York (U.K.)" is actually called Guernsey
 - Belfast, UK is listed as "Belslow"
@@ -124,7 +124,7 @@ To make it a little easier to see where each issue is, I've marked the map accor
 - The Balearic Islands are listed as "Illes Allears" instead of "Illes Balears"
 - Cordily (an island in the Mediterranean) doesn't exist
 - The second number in the scale is 100x what it should be ([comparison](https://upload.wikimedia.org/wikipedia/commons/9/97/Europe.svg))
-- The numbers for the parellels are probably wrong too
+- The numbers for the parallels are probably wrong too
 - I don't think the projection is actually the Gall-Peters Orthographic Projection
 - Algeria isn't as wide as it should be, bringing Tunisia farther west than it should be
 - The capital of Tunisia is marked as "[Carthago](https://en.wikipedia.org/wiki/Roman_Carthage)", when it should be Tunis
@@ -150,11 +150,11 @@ To make it a little easier to see where each issue is, I've marked the map accor
 - Hrodna, Belarus is listed under its Polish name, Grodno
 - Minsk, Belarus is farther southwest than it should be
 - [Crimea](https://en.wikipedia.org/wiki/Crimea) is a peninsula on the south side of Ukraine (which has been occupied by Russian invaders since 2014), not a country to the north of Ukraine
-- [Tatar](https://en.wikipedia.org/wiki/Tatars#Crimean_Tatars) is not a city in the fake Crimea on this map, but Turkic ethnic group of which a significant population lives in Crimea
+- [Tatar](https://en.wikipedia.org/wiki/Tatars#Crimean_Tatars) is not a city in the fake Crimea on this map. The Tatars are a Turkic ethnic group of which a significant population lives in the real Crimea
 - "[Salo](https://en.wikipedia.org/wiki/Salo_(food))" is not a city
 - Rivne and Mykolaiv, Ukraine are listed under their former Russian names (Rovno and Nikolaev, respectively)
 - Kadstbei doesn't exist
-- Moldova's borders stretch to the black sea, cutting into Ukraine
+- Moldova's borders stretch to the Black Sea, cutting into Ukraine
 - Cluj-Napoca, Romania is listed under its Hungarian name (Kolozsvár)
 - Magyarország is the name of Hungary in Hungarian, not a city in Hungary
 - Serbia is listed as "Bosnia and Herzegovina" (see B2 for more)
