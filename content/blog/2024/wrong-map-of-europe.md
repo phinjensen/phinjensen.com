@@ -78,6 +78,7 @@ To make it a little easier to see where each issue is, I've marked the map accor
 - Malmö should be farther south on the coast
 - Gotland should be smaller
 - Sweden's borders should extend to the end of the peninsula
+- North Jutlandic Island (the top part of Denmark) is missing[^2]
 - Copenhagen should be on one of the islands of Denmark, not on the Swedish peninsula
 - Copenhagen should be marked as the capital of Denmark, not Legoland (which isn't a city, obviously)
 - "Sübeckißa" doesn't exist
@@ -94,7 +95,7 @@ To make it a little easier to see where each issue is, I've marked the map accor
 - Beaujolais is a region of France, not a city
 - Toulouse is listed as Tolose (possibly an alternate spelling, or another language's name for the city)
 - "[Marsupial](https://en.wikipedia.org/wiki/Marsupial)" isn't a city
-- Oliwa, Poland is listed under its Latin name, Oliva
+- Gdańsk, Poland is listed under the Latin name (Oliva) for one of its districts, [Oliwa](https://en.wikipedia.org/wiki/Oliwa)[^3]
 - Wrocław, Poland is listed under its German name, Breslau
 - Slovakia and Czechia have their shapes and locations swapped (this also changes the borders of the surrounding countries)
 - Bratislava and Prague (the capitals of Slovakia and Czechia) are in the right places within their borders, but are obviously in the wrong absolute locations
@@ -104,7 +105,7 @@ To make it a little easier to see where each issue is, I've marked the map accor
 - The capital of Slovenia *is* Ljubljana, but it obviously shouldn't be where it is due to the switch listed above
 - Austria is listed as "Australia"
 - Zürich, Switzerland and Bern, Switzerland have their locations switched, roughly
-- Zürich isn't the capital of Switzerland, Geneva is...
+- Zürich isn't the capital of Switzerland, Bern is...[^1]
 - Geneva, Switzerland is switched with Genoa, Italy (which is an Italian city with which it [shares etymology](https://en.wikipedia.org/wiki/Geneva#Name))
 - There's a fictional country called "[Molvania](https://en.wikipedia.org/wiki/Molvan%C3%AEa)" where Slovenia should be
 - Florence, Italy is where Milan should be
@@ -180,3 +181,7 @@ To make it a little easier to see where each issue is, I've marked the map accor
 - Arkhangelsk is listed as "[Mihail](https://en.wikipedia.org/wiki/Michael_(archangel))"
 
 P.S. I have no idea what the original source of this map is. If you happen to know, please tell me!
+
+[^1]: I initially wrote that Geneva is the capital of Switzerland, that's incorrect. Thanks to Mark Dominus, David Schmidt, and [sakex on Hacker News](https://news.ycombinator.com/item?id=40650143) for pointing that out.
+[^2]: Thanks to [mrweasel](https://news.ycombinator.com/item?id=40650256) and [ochrist](https://news.ycombinator.com/item?id=40650480) on Hacker News for pointing this out.
+[^3]: Thanks to [piotrke on Hacker News](https://news.ycombinator.com/item?id=40650261) for telling me that Oliwa was a separate district until recently.
