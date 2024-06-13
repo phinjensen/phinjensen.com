@@ -135,6 +135,7 @@ To make it a little easier to see where each issue is, I've marked the map accor
 - The Tyrrhenian Sea is listed as the "[Tyrion Sea](https://gameofthrones.fandom.com/wiki/Tyrion_Lannister)"[^4]
 - The Ionian Sea is listed as the "Ionic Sea"[^4]
 - The Balearic Sea is listed as the "[Baelish Sea](https://gameofthrones.fandom.com/wiki/Petyr_Baelish)"[^5]
+- The North Sea and the Barents Sea are swapped[^11]
 
 ### B3
 
@@ -217,4 +218,4 @@ P.S. I have no idea what the original source of this map is. If you happen to kn
 [^8]: Thanks to plyb on Discord for pointing this out.
 [^9]: Thanks to [lastofthemojito on Hacker News](https://news.ycombinator.com/item?id=40673090) for pointing out that the island of Grímsey is within the arctic circle.
 [^10]: Thanks to [peroo on Hacker News](https://news.ycombinator.com/item?id=40673048) for pointing out that the island of Grímsey is within the arctic circle.
-[^11]: Thanks to [skrebbel on Hacker News](https://news.ycombinator.com/item?id=40673121) for pointing this out.
+[^11]: Thanks to [skrebbel on Hacker News](https://news.ycombinator.com/item?id=40673121) for pointing these out.
