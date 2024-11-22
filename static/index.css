@@ -24,7 +24,8 @@ a {
 a:hover {
   text-decoration: none;
   background: var(--link-background);
-  outline: 4px solid var(--link-background);
+  padding: 4px 8px;
+  margin: -4px -8px;
 }
 
 sup {
