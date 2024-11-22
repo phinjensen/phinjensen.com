@@ -113,6 +113,16 @@ blockquote :first-child {
 }
 
 #avatar {
+  display: block;
+}
+
+#avatar:hover {
+  outline: none;
+  text-decoration: none;
+  background: var(--link-background);
+}
+
+#avatar img {
   width: 100%;
 }
 
