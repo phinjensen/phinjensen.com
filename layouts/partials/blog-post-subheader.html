@@ -1,1 +1,1 @@
-<h5>{{ .Date | time.Format ":date_long" }} — {{ .ReadingTime }} minute read — {{ range $i, $v := .Params.tags }}{{ if $i }}, {{ end }}{{ $v }}{{ end }}</h5>
+<h5 class="subheader">{{ .Date | time.Format ":date_long" }} — {{ .ReadingTime }} minute read — {{ range $i, $v := .Params.tags }}{{ if $i }}, {{ end }}{{ $v }}{{ end }}</h5>

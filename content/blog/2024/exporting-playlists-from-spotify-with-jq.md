@@ -22,18 +22,18 @@ A quick search showed several online platforms that will export playlists from o
    2. Recorded a macro to the register `q`: `da{dd`, which deletes the object bound by curly brakets, then deletes the line which contains a dangling comma.
    3. Used `%j` to jump from one playlist to another, and called the macro (`@q`, then just `@@`) on each object I wanted to delete.
 5. Then I learned a bit of `jq` to make a parseable list of only the name and IDs of those lists:
-   ```
+   ```text
    jq -r '.playlists.[] | [.name, .id] | @tsv'
    ```
 6. Once I confirmed that worked, I learned how to use `read` to iterate over each line with the name and ID in variables:
-   ```
+   ```text
    jq -r '.playlists.[] | [.name, .id] | @tsv' | while IFS=$'\t' read name id
    do
        echo $name $id
    done
    ```
 7. Then I used the `s2yt_copy_playlist` script to copy each of those playlists from Spotify to YT Music, slightly changing the name to avoid merging playlists:
-   ```
+   ```text
    jq -r '.playlists.[] | [.name, .id] | @tsv' | while IFS=$'\t' read name id
    do
        s2yt_copy_playlist $id "+(Alayna) $name"
