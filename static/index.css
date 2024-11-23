@@ -115,6 +115,7 @@ blockquote :first-child {
 
 #avatar {
   display: block;
+  border: none;
 }
 
 #avatar:hover {
