@@ -12,4 +12,4 @@ Used stuff is best if possible!
   - [Medieval Town Square](https://www.lego.com/en-us/product/medieval-town-square-10332)
 - Any cool maps/atlases. I like maps. Maps are cool.
 - [MacBook Pro](https://www.costco.com/MacBook-Pro-Laptop-(14-inch)---Apple-M4-Pro-Chip,-Built-for-Apple-Intelligence,-12-core-CPU,-16-core-GPU,-24GB-Memory,-512GB-SSD-Storage.product.1888425.html) haha
-
+- [Magnetic Wallet](https://www.threadwallets.com/products/jade-magnetic-wallet?variant=44797056680074)

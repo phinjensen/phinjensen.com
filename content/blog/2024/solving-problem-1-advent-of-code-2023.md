@@ -196,8 +196,8 @@ This was probably the hardest part of the program for me, as I had to consider h
 
 Converting an integer to a string is tricky because the basic process I came up with (divide by 10, store the remainder as a character in the string and repeat, dividing the quotient, until the result is 0) returns the digits of the number in reverse order:
 
-> 142 / 10 = 14 with remainder of 2
-> 14 / 10 = 1 with remainder of 4
+> 142 / 10 = 14 with remainder of 2  
+> 14 / 10 = 1 with remainder of 4  
 > 1 / 10 = 0 with remainder of 1
 > 
 > We've got our digits 1, 4, and 2, but they're in reverse order :(
@@ -212,7 +212,7 @@ After that, we have `cmpq $0, %rax` check if our quotient is 0, meaning we've di
 
 Here's `print`:
 
-```
+```gas
 print:
     movq $0x04, %rax       # 4 is write()
     movq $0x1, %rbx        # File descriptor 1 (stdout)
