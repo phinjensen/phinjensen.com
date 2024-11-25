@@ -13,11 +13,50 @@
       async
       src="//gc.zgo.at/count.js"
     ></script>
+<script>
+var SERIOUS_BUSINESS_KEY = "serious_business";
+document.addEventListener("DOMContentLoaded", (event) => {
+  var checkbox = document.querySelector("#enserious-avatar");
+  checkbox.onchange = function(event) {
+    var value = event.target.checked ? "on" : "off";
+    window.localStorage.setItem(SERIOUS_BUSINESS_KEY, value);
+    var url_params = new URLSearchParams(window.location.search);
+    if (value === "on") {
+      url_params.set(SERIOUS_BUSINESS_KEY, value);
+    } else {
+      url_params.delete(SERIOUS_BUSINESS_KEY);
+    }
+    var url = new URL(window.location.href);
+    url.search = url_params.toString();
+    window.history.replaceState(null, '', url.toString());
+  }
+
+  var serious_business_local = window.localStorage.getItem(SERIOUS_BUSINESS_KEY);
+  var url_params = new URLSearchParams(window.location.search);
+  var serious_business_param = url_params.get(SERIOUS_BUSINESS_KEY);
+  if (serious_business_local === "on" || serious_business_param === "on") {
+    document.querySelector("#enserious-avatar").checked = true;
+    var url = new URL(window.location.href);
+    url_params.set(SERIOUS_BUSINESS_KEY, "on");
+    url.searchParams = url_params;
+    window.history.pushState(null, '', url.toString());
+  }
+});
+</script>
   </head>
   <body>
     <div class="wrapper">
       <div class="sidebar">
-        <a id="avatar" href="/"><img src="/me.png" /></a>
+        <div id="avatar-container">
+          <label for="enserious-avatar">
+            Serious Business Mode
+          </label>
+          <input type="checkbox" id="enserious-avatar">
+          <a id="avatar" href="/">
+            <img src="/me.png" class="avatar-unserious-fun" />
+            <img src="/me-serious-business.png" class="avatar-serious-business" />
+          </a>
+        </div>
         <nav class="navigation">
           <ul>
             <li><a href="/">about me</a></li>
