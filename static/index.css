@@ -113,6 +113,18 @@ blockquote :first-child {
   flex: 0 0 192px;
 }
 
+#avatar-container {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+#avatar-container label {
+  font-size: 12pt;
+}
+
 #avatar {
   display: block;
   border: none;
@@ -121,11 +133,25 @@ blockquote :first-child {
 #avatar:hover {
   outline: none;
   text-decoration: none;
-  background: var(--link-background);
+  background: none;
+  padding: 0;
+  margin: 0;
 }
 
 #avatar img {
   width: 100%;
+}
+
+img.avatar-serious-business {
+  display: none;
+}
+
+#enserious-avatar:checked ~ #avatar img.avatar-unserious-fun {
+  display: none;
+}
+
+#enserious-avatar:checked ~ #avatar img.avatar-serious-business {
+  display: block;
 }
 
 .navigation {
@@ -215,9 +241,13 @@ footer {
     flex-wrap: wrap;
   }
 
-  #avatar {
+  #avatar-container {
     width: 128px;
     padding-right: 32px;
+  }
+
+  #avatar-container label {
+    font-size: 8pt;
   }
 
   .wrapper {
@@ -242,11 +272,6 @@ footer {
     padding-top: 0;
     display: flex;
     flex-wrap: nowrap;
-  }
-
-  #avatar {
-    width: 128px;
-    padding-right: 32px;
   }
 
   .wrapper {
