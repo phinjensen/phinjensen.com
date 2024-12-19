@@ -43,8 +43,14 @@ You can see all of the movies I watched this year on [Letterboxd](https://letter
 ## Favorite Music I Discovered
 
 - [This Could Be Texas](https://rateyourmusic.com/release/album/english-teacher/this-could-be-texas/) by English Teacher
+  - Fits the gap from Black Country, New Road not releasing anything this year
 - [Brat](https://rateyourmusic.com/release/album/charli-xcx/brat/) by Charli XCX
+  - It's brat ~~summer~~ winter
 - [Imaginal Disk](https://rateyourmusic.com/release/album/magdalena-bay/imaginal-disk/) by Magdalena Bay
+  - Favorite tracks: Vampire in the Corner, Death & Romance, Angel on a Satellite
+- [Favourite](https://www.youtube.com/watch?v=0a_vpigwDb4) by Fontaines D.C.
+  - My favorite track of the year. It's wonderful! Energetic, driving, nostalgic, and wonderfully emotional. Give it a listen!
+- [Lithonia](https://www.youtube.com/watch?v=co-bx0mBsLc&pp=ygUIbGl0aG9uaWE%3D) by Childish Gambino
 
 You can see all of the music I listened to this year on [Last.fm](https://www.last.fm/user/heliosfire/library?from=2024-01-01&rangetype=year).
 
