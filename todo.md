@@ -1,0 +1,1 @@
+- [ ] The hover effect for links flush with the left side of body text (including <h*> tags) doesn't extend to the left like it should.
