@@ -24,7 +24,16 @@ July 2022–November 2023
 
 February 2022-April 2023
 
-### raytracer — software raytracer written in Rust
+### [raytracer — software raytracer written in Rust](https://github.com/phinjensen/raytracer)
+
+![colored balls and triangles with a completely reflective ball at the bottom and harsh light coming from the right](raytracer.jpg)
+
+One project for CS 455: Computer Graphics at BYU was to build a raytracer from scratch. They recommended C++ because the renders could get pretty slow and that's what the TAs were familiar with, but I thought it'd be a good chance to use Rust, and I had a ton of fun with it. We had to output images in the PPM format, support spheres and triangles with diffuse and reflective textures, and allow each ray to bounce at least three times. An interesting mistake I made at one point was incorrectly writing the image size in the output. I didn't notice the mistake because the GIMP happily ignored that metadata and rendered the image without any problem, but the grader used an image viewer that wasn't so loose with the format. I was able to resubmit without any points lost 😁.
+
+This would be a fun project to continue. Things I could add:
+
+- transparent objects
+- parallel processing
 
 February–March 2023
 
