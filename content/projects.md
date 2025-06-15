@@ -1,26 +1,32 @@
-I don't have a ton of free time these days, but I try to use that free time productively. When I'm successful, these are the kinds of things I work/have worked on.
+---
+title: "Personal Projects"
+---
 
-(work in progress)
+I've always got something I'm working on, whether it's every day or once a month. Here are some of the more substantial projects I've worked on.
 
 ## Technical
 
-### rlox — an implementation of Robert Nystrom's Lox in Rust
+### [rlox — an implementation of Robert Nystrom's Lox in Rust](https://github.com/phinjensen/rlox)
+
+I've been writing an implementation or Lox, following Robert Nystrom's excellent book [Crafting Interpreters](https://craftinginterpreters.com/) through CodeCrafters.io. I haven't done anything interesting to modify the language, but the implementation is different in a lot of ways from the reference Java implementation. I'm currently working through the [Resolving and Binding](https://craftinginterpreters.com/resolving-and-binding.html) chapter.
 
 February 2025–present
 
-### Koja — private location sharing for Android
+### [Koja — private location sharing for Android](https://sr.ht/~phinjensen/koja/)
+
+Koja (کچا, Persian for "where") is an app for privately tracking your location and sharing it with friends and family. I used Google Maps' location sharing for a while, but in the interest of privacy decided to build an app to replicate that functionality. The server is a Supabase project that uses PostGIS for the geographic data, and the client is an Android app written in Kotlin. I got this to a decent point where it fairly reliably sends the location to the server, even auto-starting itself on boot and if it dies (with an easy toggle off, of course). It's almost useful; I just need to push it through some polishing, and then I can actually use it to share my location with my wife.
 
 October 2024–present
 
 ### VajehSabt — background listening Persian translation
 
-VajehSabt is an Android app with embedded speech-to-text and speech detection models (both running with PyTorch) that listens for speech and then attempts to transcribe it to Persian text which it saves.
+VajehSabt is an Android app with embedded speech-to-text and speech detection models (both running with PyTorch) that listens for speech and then attempts to transcribe it to Persian text, which it saves to a list that can be viewed later.
 
-For the LING 361: Speech Processing class at BYU, the final project was to build _something_ that used speech processing technology in some way. At the time I was listening to BBC Persian and some other Persian podcasts on my walks to school, and when I came across words I didn't recognize, I would try to write the word down in a notebook and look it up later to figure out what it meant. I chose to make VajehSabt to try to solve that problem for my final project, with the idea that I could start VajehSabt, then a podcast, and just repeat any words I didn't recognize and have it transcribe them for me to look up & memorize later.
+For the LING 361: Speech Processing class at BYU, the final project was to build _something_ that used speech processing technology in some way. At the time I was listening to BBC Persian and some other Persian podcasts on my walks to school, and when I came across words I didn't recognize, I would try to write the word down in a notebook and look it up later to figure out what it meant. I chose to make VajehSabt to try to solve that problem for my final project, with the idea that I could start VajehSabt, then a podcast, and just repeat any words I didn't recognize and have it transcribe them for me to look up and memorize later.
 
-I wrote it in Kotlin for Android using Jetpack Compose. I'd done one other Android app for a class, but that was using Java and the older Views UI model, so the language and framework were new. I also had to learn how to integrate PyTorch models into an Android app, for which there are a few tutorials that don't explain certain things enough to make integrating new models very easy at all; nevertheless, I did get it working with two different models processing the input from the microphone API.
+I wrote it in Kotlin for Android using Jetpack Compose. I'd done one other Android app for a class, but that was using Java and the older Views UI model, so the language and framework were new. I also had to learn how to integrate PyTorch models into an Android app, for which there are a few tutorials that don't explain certain things enough to make integrating new models very easy (I spent _hours_ trying to figure this out for each model); nevertheless, I did get it working with two different models processing the input from the microphone API.
 
-Unfortunately, the whole thing didn't work out too well in the end. The speech recognition worked, and the speech-to-text _functioned_ but not in a very useful way. Speech-to-text models (at least those I've seen, including Whisper) are best at transcribing sentences, not single words, so it incorrectly transcribed the words I said at least 50% of the time.
+Unfortunately, the whole thing didn't work out too well in the end. The speech recognition worked, and the speech-to-text _functioned_ but not in a very useful way. Speech-to-text models (at least those I've seen, including Whisper) work best when transcribing whole sentences, not single words, so it incorrectly transcribed the words I said at least 50% of the time.
 
 I think a better idea would be to build an app that can intercept the audio playing through the system and "clip" the audio when the user requests (maybe even using speech detection, e.g. if the user just says "clip" out loud) and saves the audio clip for later and additionally can attempt to transcribe it. That would be more broadly useful and probably work better.
 
@@ -42,9 +48,9 @@ July 2022–November 2023
 
 BYU has a page[^1] that allows you to view the schedule for each classroom in each building on campus, which is theoretically useful but in practice very difficult to work with if what you're looking for is, for example, _any empty classroom on a Tuesday at 10:30_. To do so, you would have to select a building, click to open a window to get a list of rooms, and then go through that list one by one until you find a room that fits your needs.
 
-This tool makes the process of finding a room much easier. Select a building (or all buildings), day(s) of the week, and a time range, and it will find all of the rooms in that building or on campus that aren't scheduled during that time.
+This tool makes finding a room much easier. Select a building (or all buildings), day(s) of the week, and a time range, and it will find all of the rooms in that building or on campus that aren't scheduled during that time.
 
-It's a Python+Flask app using PostgreSQL for the database. The scraper uses BeautifulSoup4, and psycopg2, while the application itself uses [Peewee](https://docs.peewee-orm.com/en/latest/) for an ORM. I had forgotten about that completely until I wrote this summary, so I can't remember whether I even liked it much.
+It's a Python+Flask app using PostgreSQL for the database and [Peewee](https://docs.peewee-orm.com/en/latest/) for database access. The scraper uses BeautifulSoup4 and psycopg2.
 
 This used to be hosted at https://byu-tools.fly.dev/ though I haven't kept it running since I graduated.
 
@@ -65,7 +71,7 @@ February–March 2023
 
 ### [Ultra Geo Master — a web-based geography game skeleton](https://github.com/phinjensen/ultra-geo-master)
 
-Growing up, my family would play the board game _[Where in the World?](https://boardgamegeek.com/boardgame/9646/where-in-the-world)_—specifically a version where we would take turns drawing a card with various information about a country for another person, saying the name of the country on the card, and having the other person guess where it is on the map. Each country was worth points based on its area; e.g. Ukraine was worth 1 point (being the largest country in Europe, excluding Russia, which was included in the Asia map/deck) while Vatican City was worth 45.
+Growing up, my family would play the board game _[Where in the World?](https://boardgamegeek.com/boardgame/9646/where-in-the-world)_—specifically a version where we would take turns drawing a card with various information about a country, reading it to another person, and having them guess where it is on the map. Each country was worth points based on its area; for example, Ukraine is worth 1 point (being the largest country in Europe, excluding Russia, which was in the Asia map/deck), while Vatican City is worth 45.
 
 In this app, a simple backend server provides card and map data, so players can start a game with a map on a shared screen (such as a TV or laptop) and "join" the game on a phone, where they are given a deck of cards. The state of the deck was shared between each player in a game, so if you drew Germany, no one else in your game would draw it. The frontend was built with React.
 
@@ -86,11 +92,13 @@ April–June 2022 (though I'd still like to complete this)
 
 ## Non-technical
 
+My main creative hobbies are all computer-related, but I'm trying to get more into physical crafts.
+
 ### Knitted Eeyore toy
 
 ![a knitted stuffed Eeyore](eeyore.jpg)
 
-I followed [a pattern](https://www.ravelry.com/patterns/library/eeyore-20) by Claire Garland to knit this stuffed Eeyore toy for my mom (who loves Winnie the Pooh and Eeyore especially) for her birthday. It's the second complete knitting project I've done (the first being a beanie), and the first that uses any stitches other than knit and purl. The pattern is excellent and the knitting was a lot of fun, though I found that I don't enjoy the assembly aspects of knitting a stuffed animal like this; stitching things together, adding the mane, stuffing, etc. all feel a little tedious. That may be because they're more difficult. I was pretty disappointed with how some of my stitches turned out, especially mattress stitch along edges that weren't totally straight. That being said, I'm pretty happy with the overall project and my mom loved it.
+I followed [a pattern](https://www.ravelry.com/patterns/library/eeyore-20) by Claire Garland to knit this stuffed Eeyore toy for my mom (who loves Winnie the Pooh and Eeyore especially) for her birthday. It's the second complete knitting project I've done (the first being a beanie), and the first that uses any stitches other than knit and purl. The pattern is excellent and the knitting was a lot of fun, though I found that I don't enjoy the assembly aspects of knitting a stuffed animal like this; stitching things together, adding the mane, stuffing, etc. all feel a little tedious. That may be because they're more difficult. I was pretty disappointed with how some of my stitches turned out, especially mattress stitch along edges that weren't totally straight. That being said, I'm pretty happy with the overall project, and my mom loved it. Mission accomplished.
 
 January–May 2025
 

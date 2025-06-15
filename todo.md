@@ -1,3 +1,3 @@
-- [ ] The hover effect for links flush with the left side of body text (including <h*> tags) doesn't extend to the left like it should.
+- [x] The hover effect for links flush with the left side of body text (including <h*> tags) doesn't extend to the left like it should.
 - [ ] "My tech stack" post -- what hardware do I use? Why? What software do I use? Why? What little things have I found improve life?
-- [ ] Finish projects page
+- [x] Finish projects page
