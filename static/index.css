@@ -19,13 +19,19 @@ body {
 a {
   color: var(--link-color);
   text-decoration: none;
+  padding: 4px 8px;
+  margin: -4px -8px;
 }
 
 a:hover {
   text-decoration: none;
   background: var(--link-background);
-  padding: 4px 8px;
-  margin: -4px -8px;
+  /*padding: 4px 8px;
+  margin: -4px -8px;*/
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  display: inline-block;
 }
 
 sup {
@@ -173,6 +179,7 @@ img.avatar-serious-business {
 .content {
   flex: 0 0 36em;
   overflow: hidden;
+  padding: 0.5em;
 }
 
 .content #body {

@@ -14,13 +14,39 @@ October 2024–present
 
 ### VajehSabt — background listening Persian translation
 
+VajehSabt is an Android app with embedded speech-to-text and speech detection models (both running with PyTorch) that listens for speech and then attempts to transcribe it to Persian text which it saves.
+
+For the LING 361: Speech Processing class at BYU, the final project was to build _something_ that used speech processing technology in some way. At the time I was listening to BBC Persian and some other Persian podcasts on my walks to school, and when I came across words I didn't recognize, I would try to write the word down in a notebook and look it up later to figure out what it meant. I chose to make VajehSabt to try to solve that problem for my final project, with the idea that I could start VajehSabt, then a podcast, and just repeat any words I didn't recognize and have it transcribe them for me to look up & memorize later.
+
+I wrote it in Kotlin for Android using Jetpack Compose. I'd done one other Android app for a class, but that was using Java and the older Views UI model, so the language and framework were new. I also had to learn how to integrate PyTorch models into an Android app, for which there are a few tutorials that don't explain certain things enough to make integrating new models very easy at all; nevertheless, I did get it working with two different models processing the input from the microphone API.
+
+Unfortunately, the whole thing didn't work out too well in the end. The speech recognition worked, and the speech-to-text _functioned_ but not in a very useful way. Speech-to-text models (at least those I've seen, including Whisper) are best at transcribing sentences, not single words, so it incorrectly transcribed the words I said at least 50% of the time.
+
+I think a better idea would be to build an app that can intercept the audio playing through the system and "clip" the audio when the user requests (maybe even using speech detection, e.g. if the user just says "clip" out loud) and saves the audio clip for later and additionally can attempt to transcribe it. That would be more broadly useful and probably work better.
+
+I'd like to open-source this, but I added a lot of models in testing of which I can't remember the license, so I need to clean things up a lot before it's fit for publication.
+
 March–April 2024
 
-### SeeYouLater — CLI and browser bookmarking tool
+### [SeeYouLater — CLI and browser bookmarking tool](https://github.com/phinjensen/seeyoulater)
+
+SeeYouLater is a CLI bookmarking tool with rudimentary sync support and browser extension integration. I initially started it because I tried a tool called [Buku](https://github.com/jarun/buku) but didn't like some of its features (maybe more because I just wanted to start a new project). The idea was to have a fast tool for saving web links that would automatically figure out title and description, have a nice CLI interface, and be easy to sync across computers, but I stopped working on it when I realized I just didn't care that much about managing my bookmarks. I lightly use [https://raindrop.io/](https://raindrop.io/) now and it's Good Enough. And I really don't need (or maybe even want) a CLI-based tool for something that I'll mainly be using with a browser.
+
+It was a fun project while it lasted. It's the first Rust project I used with SQL, and the second project I did with SQLite, and like many other people, I really respect SQLite. It's a great project.
 
 July 2022–November 2023
 
-### BYU open room finder — tool for finding unused classrooms on BYU campus
+### [BYU open room finder — tool for finding unused classrooms on BYU campus](https://github.com/phinjensen/byu-tools)
+
+![screenshot showing BYU open room finder](byu-tools.jpg)
+
+BYU has a page[^1] that allows you to view the schedule for each classroom in each building on campus, which is theoretically useful but in practice very difficult to work with if what you're looking for is, for example, _any empty classroom on a Tuesday at 10:30_. To do so, you would have to select a building, click to open a window to get a list of rooms, and then go through that list one by one until you find a room that fits your needs.
+
+This tool makes the process of finding a room much easier. Select a building (or all buildings), day(s) of the week, and a time range, and it will find all of the rooms in that building or on campus that aren't scheduled during that time.
+
+It's a Python+Flask app using PostgreSQL for the database. The scraper uses BeautifulSoup4, and psycopg2, while the application itself uses [Peewee](https://docs.peewee-orm.com/en/latest/) for an ORM. I had forgotten about that completely until I wrote this summary, so I can't remember whether I even liked it much.
+
+This used to be hosted at https://byu-tools.fly.dev/ though I haven't kept it running since I graduated.
 
 February 2022-April 2023
 
@@ -67,3 +93,5 @@ April–June 2022 (though I'd still like to complete this)
 I followed [a pattern](https://www.ravelry.com/patterns/library/eeyore-20) by Claire Garland to knit this stuffed Eeyore toy for my mom (who loves Winnie the Pooh and Eeyore especially) for her birthday. It's the second complete knitting project I've done (the first being a beanie), and the first that uses any stitches other than knit and purl. The pattern is excellent and the knitting was a lot of fun, though I found that I don't enjoy the assembly aspects of knitting a stuffed animal like this; stitching things together, adding the mane, stuffing, etc. all feel a little tedious. That may be because they're more difficult. I was pretty disappointed with how some of my stitches turned out, especially mattress stitch along edges that weren't totally straight. That being said, I'm pretty happy with the overall project and my mom loved it.
 
 January–May 2025
+
+[^1]: https://y.byu.edu/class_schedule/cgi/classRoom2.cgi
