@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+    <head>
+        <Title>LetterDice</title>
+<style>
+.board {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center;
+
+    margin: 0 auto;
+    width: 100vh;
+    height: 100vh;
+
+    font-family: sans-serif;
+    font-size: 20vh;
+    text-align: center;
+}
+</style>
+    </head>
+    <body>
+        <div class="board">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <script>
+const CLASSIC_DICE = [
+    'AACIOT',
+    'ABILTY',
+    'ABJMOQ',
+    'ACDEMP',
+    'ACELRS',
+    'ADENVZ',
+    'AHMORS',
+    'BIFORX',
+    'DENOSW',
+    'DKNOTU',
+    'EEFHIY',
+    'EGKLUY',
+    'EGINTV',
+    'EHINPS',
+    'ELPSTU',
+    'GILRUW',
+];
+const DICE = [
+    'AAEEGN',
+    'ABBJOO',
+    'ACHOPS',
+    'AFFKPS',
+    'AOOTTW',
+    'CIMOTU',
+    'DEILRX',
+    'DELRVY',
+    'DISTTY',
+    'EEGHNW',
+    'EEINSU',
+    'EHRTVW',
+    'EIOSST',
+    'ELRTTY',
+    'HIMNUQ',
+    'HLNNRZ',
+]
+
+// Generates a random integer in the range [min, max)
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min)) + min;
+}
+
+function removeItem(array, index) {
+    return array.splice(index, 1)[0];
+}
+
+function generateBoard() {
+    const board = [];
+    const remainingDice = [...DICE];
+    const seen = new Set();
+    while (remainingDice.length > 0) {
+        const index = getRandomInt(0, remainingDice.length);
+        const die = removeItem(remainingDice, index);
+        const letter = die.at(getRandomInt(0, die.length));
+        if (seen.has(die)) console.log('duplicate!');
+        seen.add(die);
+        console.log(die, "->", letter);
+        board.push(letter);
+    }
+    return board;
+}
+
+function boardToString(board) {
+    let rows = Math.sqrt(board.length);
+    let result = '';
+    for (let r = 0; r < rows; r++) {
+        let displayRow = board.slice(r*rows, (r+1)*rows)
+            .map(function (l) {
+                if (l === 'Q') {
+                    return 'Qu ';
+                } else {
+                    return l + '  ';
+                }
+            })
+            .join('');
+        result += displayRow + "\n";
+    }
+    return result;
+}
+
+function renderBoard(board) {
+    let elements = document.querySelectorAll('.board div');
+    board.forEach(function (letter, i) {
+        elements[i].innerHTML = letter === 'Q' ? 'Qu' : letter;
+    });
+}
+
+renderBoard(generateBoard());
+        </script>
+    </body>
+</html>
