@@ -8,7 +8,7 @@ Used stuff is best if possible!
     - Vanilla Beans
     - Aleppo pepper
     - Pistachios (raw shelled)
-    - Pomegranate molasses ?
+    - Pomegranate molasses (probably available at middle eastern grocery stores in SLC)
     - Poppy seeds
     - Peanut flour
     - Saffron
