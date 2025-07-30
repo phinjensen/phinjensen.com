@@ -10,21 +10,23 @@ Used stuff is best if possible!
     - Pistachios (raw shelled)
     - Pomegranate molasses ?
     - Poppy seeds
-    - Almond flour
+    - Peanut flour
     - Saffron
     - Dried rose petals
 - Cooking stuff:
     - Mandoline
     - Insanely expensive waffle maker with removable plates like [this](https://www.williams-sonoma.com/products/breville-smart-basic-waffle-maker/) or [this](https://www.amazon.com/GreenPan-4-Square-Dishwasher-Adjustable-Breakfast/dp/B0BTTX66HV)
     - Pizza peel (metal)
+    - Offset spatulas (like [these](https://shop.kingarthurbaking.com/items/offset-spatula-set), but I don't care if it's King Arther or another brand)
+    - 9-inch silicone round pan liners (like [these](https://shop.kingarthurbaking.com/items/Round-Pan-Liners), which are a set of two, which is perfect because I have 2 pans)
 - Movies:
     - [Hit the Road](https://www.imdb.com/title/tt14812782/)
 - Books:
     - Zoë Bakes Cookies by Zoë François
     - Zoë Bakes Cakes by Zoë François
-    - Mexican Everyday by Rick Bayless
     - The Essential Cuisines of Mexico by Diana Kennedy
     - The Art of Mexican Cooking by Diana Kennedy
+    - Mexican Everyday by Rick Bayless
     - Oaxaca: Home Cooking from the Heart of Mexico by Bricia Lopez
 - Clothes:
     - Ankle socks (nothing fancy, something like [these](https://www.costco.com/puma-mens-no-show-sock-10-pair.product.100825224.html) from Costco)
@@ -33,4 +35,3 @@ Used stuff is best if possible!
     - [Tudor Corner](https://www.lego.com/en-us/product/tudor-corner-10350)
     - [Land Rover](https://www.lego.com/en-us/product/land-rover-classic-defender-90-10317)
     - [Medieval Town Square](https://www.lego.com/en-us/product/medieval-town-square-10332)
-    - Bulk legos from ebay or something
