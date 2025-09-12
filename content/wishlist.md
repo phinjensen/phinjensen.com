@@ -13,6 +13,7 @@ Used stuff is best if possible!
     - Peanut flour
     - Saffron
     - Dried rose petals
+    - Rose water
 - Cooking stuff:
     - Mandoline
     - Insanely expensive waffle maker with removable plates like [this](https://www.williams-sonoma.com/products/breville-smart-basic-waffle-maker/) or [this](https://www.amazon.com/GreenPan-4-Square-Dishwasher-Adjustable-Breakfast/dp/B0BTTX66HV)

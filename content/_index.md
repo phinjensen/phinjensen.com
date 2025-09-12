@@ -8,7 +8,7 @@ I love languages and linguistics. I speak Persian, some Turkish, and I’m learn
 
 Right now I am:
 - Reading Sarah J. Maas’s _Throne of Glass_ series
-- Trying to run more frequently (in the 5k range, though I ran a marathon a couple of years ago)
+- Training for a half marathon ([Runtastic Nebo](https://runtasticevents.com/races/nebo/))
 - Reading _[Crafting Interpreters](https://craftinginterpreters.com/)_ by Robert Nystrom and [following along](https://github.com/phinjensen/rlox) in Rust
 - Occasionally contributing to open source projects
 
