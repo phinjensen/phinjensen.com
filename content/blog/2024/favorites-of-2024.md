@@ -29,7 +29,7 @@ I read or listened to 33 books this year. My favorites are:
 - **[Don't Sleep, There Are Snakes](https://www.goodreads.com/book/show/4420281-don-t-sleep-there-are-snakes) by Daniel Everett** was a fantastic memoir/anthropology/linguistics book. See [my review](https://www.goodreads.com/review/show/3931637356) on Goodreads. I'd love to read books like it.
 - **[Postwar](https://www.goodreads.com/book/show/29658.Postwar) by Tony Judt** is the only book here that I haven't actually finished. In fact, I've only read about ⅓ of it (it's a long book), but I've loved what I've read so far. It's very approachable and well-written, with clear, dignified, and flowing prose that I really enjoyed reading. Despite being a relatively easy read (as far as history books go), it's absolutely packed with information and insights that are just fascinating. I'm looking forward to finishing it.
 
-You can see all the books I read (or listened to) this year on [Goodreads](https://www.goodreads.com/challenges/11634-2024-reading-challenge).
+You can see all the books I read (or listened to) this year on [Goodreads](https://www.goodreads.com/user/year_in_books/2024/39581420).
 
 ## Favorite Movies
 
@@ -51,7 +51,7 @@ You can see all the movies I watched this year on [Letterboxd](https://letterbox
 
 - **[This Could Be Texas](https://rateyourmusic.com/release/album/english-teacher/this-could-be-texas/) by English Teacher** Fits the gap left by Black Country, New Road not releasing anything this year.
 - **[Brat](https://rateyourmusic.com/release/album/charli-xcx/brat/) by Charli XCX** is her best release since Pop 2. It's brat ~~summer~~ winter.
-- **[Imaginal Disk](https://rateyourmusic.com/release/album/magdalena-bay/imaginal-disk/) by Magdalena Bay** is a great album that I enjoy despite the singer's voice, which I find annoying. Favorite tracks: Vampire in the Corner, Death & Romance, Angel on a Satellite.
+- **[Imaginal Disk](https://rateyourmusic.com/release/album/magdalena-bay/imaginal-disk/) by Magdalena Bay** is a great album that I enjoy despite finding Mica's voice annoying. Favorite tracks: Vampire in the Corner, Death & Romance, Angel on a Satellite.
 - **[Favourite](https://www.youtube.com/watch?v=0a_vpigwDb4) by Fontaines D.C.** My favo(u)rite track of the year. It's wonderful: Energetic, driving, nostalgic, and emotional. Give it a listen!
 - **[Lithonia](https://www.youtube.com/watch?v=co-bx0mBsLc&pp=ygUIbGl0aG9uaWE%3D) by Childish Gambino** just rocks.
 
