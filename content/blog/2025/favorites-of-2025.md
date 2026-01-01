@@ -4,12 +4,10 @@ author: Phineas Jensen
 date: 2026-01-01
 description: "Books—Movies—TV—Music—Software—Miscellany"
 tags:
-  - neovim
   - books
-  - music
   - movies
   - tv
-  - games
+  - music
 ---
 
 Continuing the tradition started in [2023](/blog/2023/favorites-of-2023/) and [2024](/blog/2023/favorites-of-2024/), here are my favorite things I discovered this year!
