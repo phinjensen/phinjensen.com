@@ -144,6 +144,7 @@ blockquote :first-child {
 
 #avatar img {
   width: 100%;
+  height: auto;
 }
 
 img.avatar-serious-business {
