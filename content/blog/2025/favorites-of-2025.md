@@ -1,7 +1,7 @@
 ---
 title: Favorites of 2025
 author: Phineas Jensen
-date: 2026-01-01
+date: 2025-12-31
 description: "Books—Movies—TV—Music—Software—Miscellany"
 tags:
   - books
