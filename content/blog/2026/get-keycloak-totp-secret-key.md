@@ -1,10 +1,11 @@
 ---
-title: Favorites of 2025
+title: How to get an OTP secret key out of a Keycloak database
 author: Phineas Jensen
-date: 2025-12-31
+date: 2026-01-03
 description: "Retrieving the key—The motivation"
 tags:
   - keycloak
+  - journal
 ---
 
 TL;DR:
